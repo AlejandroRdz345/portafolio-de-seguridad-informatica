@@ -11,60 +11,77 @@
         <div class="logo">Portafolio</div>
         <ul class="nav-links">
             <li><a href="#" class="activo">Inicio</a></li>
-            <li><a href="#">Parcial 1</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Parcial 1 ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="evidencia1.html">Práctica 1</a></li>
+                    <li><a href="evidencia2.html">Práctica 2</a></li>
+                    <li><a href="evidencia3.html">Laboratorio</a></li>
+                </ul>
+            </li>
+
             <li><a href="#">Parcial 2</a></li>
             <li><a href="#">Parcial 3</a></li>
             <li><a href="#">Final</a></li>
             <li><a href="#contacto" class="btn-contacto">Contacto</a></li>
         </ul>
     </nav>
+
     <header class="hero">
         <div class="hero-text">
+            <p class="institucion">Universidad Politécnica de San Lui Potosí | 6to Semestre Ene-Jun 2026</p>
             <p class="subtitulo">CNO V – Seguridad Informática</p>
             <h1>Hola, soy <span class="resaltado">Cristian Alejandro Rodriguez Moreno</span></h1>
-            <p class="descripcion">
-                Portafolio de evidencias de
-                mis avances.
-            </p>
+            <p class="alias">Alias: "Ale"</p> 
         </div>
     </header>
+
     <div class="contenedor">
+        <section class="tarjeta intro">
+            <h2><span class="icono">📌</span> Presentación del Proyecto</h2>
+            <p>Este portafolio digital se hizo con el proposito de documentar y recopilar las evidencias de cada parcial.</p>
+            <p>El <strong>enfoque del curso</strong> se centra en la seguridad informática, abarcando áreas como las pruebas de penetración, el análisis de vulnerabilidades y la protección de sistemas.</p>
+            <p>Este sitio es una evidencia del desarrollo de mi aprendizaje en la materia de Seguridad Informatica.</p>
+        </section>
+
         <section class="tarjeta perfil">
             <h2><span class="icono">👨‍💻</span> Perfil del Estudiante</h2>
             <div class="contenido-perfil">
                 <p>
-                    <strong>Semblanza:</strong> Me apasiona entender cómo funcionan las cosas por dentro para poder protegerlas. 
-                    Busco especializarme en la seguridad de redes y la gestión de incidentes.
+                    <strong>Sobre mí:</strong> Soy estudiante de TI y me motiva entender el funcionamiento interno de la tecnología para poder protegerla con el objetivo de aprender más sobre la seguridad y su implementación.
                 </p>
                 <div class="lista-intereses">
-                    <span class="chip">Ethical Hacking</span>
+                    <span class="chip">Ciberseguridad</span>
+                    <span class="chip">Pentesting</span>
                     <span class="chip">Redes Cisco</span>
-                    <span class="chip">Linux</span>
-                    <span class="chip">Investigación</span>
                 </div>
             </div>
         </section>
+
         <section class="tarjeta tecnica">
-            <h2><span class="icono">⚙️</span> Ficha Técnica</h2>
+            <h2><span class="icono">⚙️</span> Información Técnica</h2>
             <div class="grid-tecnico">
                 <div class="item">
-                    <strong>Lenguajes</strong>
-                    <p>HTML5, CSS3</p>
+                    <strong>Tecnologías</strong>
+                    <p>HTML5, CSS, Web3Forms</p>
                 </div>
                 <div class="item">
                     <strong>Plataforma</strong>
                     <p>GitHub Pages</p>
                 </div>
                 <div class="item">
-                    <strong>Control</strong>
-                    <p>Git Versioning</p>
+                    <strong>Control de Versiones</strong>
+                    <p>Git</p>
                 </div>
             </div>
         </section>
 
         <section id="contacto" class="tarjeta contacto">
             <h2>📩 Contáctame</h2>
-            <form action="https://formspree.io/f/" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="aa81adc2-c803-4b08-9370-90c90892edff">
+                <input type="hidden" name="from_name" value="Contacto Portafolio">
                 <div class="grupo-input">
                     <input type="text" name="name" placeholder="Tu Nombre" required>
                 </div>
@@ -78,10 +95,10 @@
             </form>
         </section>
     </div>
-    <footer>
-        <p>&copy; 2026 [Tu Nombre] | Seguridad Informática</p>
-        <p class="ssl"><small>🔒 Sitio Seguro con SSL (HTTPS)</small></p>
-    </footer>
 
+    <footer>
+        <p>&copy; 2026 Cristian Alejandro Rodriguez Moreno | CNO V – Seguridad Informática</p>
+        <p class="ssl"><small>🔒 Sitio Seguro con certificado SSL</small></p>
+    </footer>
 </body>
 </html>
